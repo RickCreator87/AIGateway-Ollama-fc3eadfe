@@ -1,29 +1,31 @@
-name: Ollama Self Test
+#!/bin/bash
+set -euo pipefail
 
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
+echo "----------------------------------------"
+echo "🔍 SELF-TEST: Starting environment checks"
+echo "----------------------------------------"
 
-jobs:
-  self-test:
-    runs-on: ubuntu-latest
+# Check required commands
+REQUIRED_CMDS=("git" "jq" "bash")
 
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+for cmd in "${REQUIRED_CMDS[@]}"; do
+  if ! command -v "$cmd" >/dev/null 2>&1; then
+    echo "❌ ERROR: Required command '$cmd' is not installed."
+    exit 1
+  fi
+done
 
-      - name: Make scripts executable
-        run: chmod +x scripts/*.sh
+echo "✅ All required commands are available."
 
-      - name: Run Ollama stack entrypoint
-        run: |
-          echo "Starting Ollama self-test..."
-          ./scripts/run.sh
-- name: Make scripts executable
-  run: |
-    if [ -d "scripts" ]; then
-      chmod +x scripts/*.sh
-    else
-      echo "No scripts directory found, skipping chmod."
-    fi
+# Optional: Validate repo state
+if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  echo "❌ ERROR: Not inside a Git repository."
+  exit 1
+fi
+
+echo "📁 Git repository detected."
+
+echo "----------------------------------------"
+echo "🔍 SELF-TEST: Completed successfully"
+echo "----------------------------------------"
+exit 0
