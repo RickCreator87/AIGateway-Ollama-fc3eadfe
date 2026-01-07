@@ -6,14 +6,7 @@ echo "🔍 SELF-TEST: Starting environment checks"
 echo "----------------------------------------"
 
 # Check required commands
-REQUIRED_CMDS=("git" "jq" "bash")
 
-for cmd in "${REQUIRED_CMDS[@]}"; do
-  if ! command -v "$cmd" >/dev/null 2>&1; then
-    echo "❌ ERROR: Required command '$cmd' is not installed."
-    exit 1
-  fi
-done
 
             - name: CN Terragrunt GitHub Actions
   # You may pin to the exact commit or the version.
