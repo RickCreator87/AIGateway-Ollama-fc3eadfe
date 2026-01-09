@@ -17,4 +17,6 @@ If a client works with `api.openai.com`, it should work here with minimal or zer
 
 ---
 
+[![Maintainability](https://qlty.sh/gh/RickCreator87/projects/AIGateway-Ollama/maintainability.svg)](https://qlty.sh/gh/RickCreator87/projects/AIGateway-Ollama)
+
 ## Architecture (High Level)
