@@ -1,3 +1,5 @@
+[![Maintainability](https://qlty.sh/gh/RickCreator87/projects/rickcreator87.github.io/maintainability.svg)](https://qlty.sh/gh/RickCreator87/projects/rickcreator87.github.io)
+
 # AI Gateway for Ollama
 
 An OpenAI API–compatible gateway that proxies requests to a local Ollama instance.
