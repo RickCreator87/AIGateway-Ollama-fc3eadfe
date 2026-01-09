@@ -7,10 +7,9 @@ echo "----------------------------------------"
 
 # Check required commands
 
-
-            - name: CN Terragrunt GitHub Actions
-  # You may pin to the exact commit or the version.
-  # uses: CloudNation-nl/cn-terragrunt-github-actions@157d7b2ada26510a0f7ea0180af89bc2cf9305e4
+  - name: CN Terragrunt GitHub Actions
+   # You may pin to the exact commit or the version.
+   # uses: CloudNation-nl/cn-terragrunt-github-actions@157d7b2ada26510a0f7ea0180af89bc2cf9305e4
   uses: CloudNation-nl/cn-terragrunt-github-actions@v0.0.16
   with:
     # Terraform or Terragrunt subcommand to execute.
