@@ -1,3 +1,6 @@
+
+
+
 [![Maintainability](https://qlty.sh/gh/RickCreator87/projects/rickcreator87.github.io/maintainability.svg)](https://qlty.sh/gh/RickCreator87/projects/rickcreator87.github.io)
 
 # AI Gateway for Ollama
