@@ -1,3 +1,9 @@
+
+
+
+
+[![Maintainability](https://qlty.sh/gh/RickCreator87/projects/rickcreator87.github.io/maintainability.svg)](https://qlty.sh/gh/RickCreator87/projects/rickcreator87.github.io)
+
 # AI Gateway for Ollama
 
 An OpenAI API–compatible gateway that proxies requests to a local Ollama instance.
@@ -15,8 +21,3 @@ This project lets you run local LLMs via Ollama while keeping compatibility with
 
 If a client works with `api.openai.com`, it should work here with minimal or zero changes.
 
----
-
-[![Maintainability](https://qlty.sh/gh/RickCreator87/projects/AIGateway-Ollama/maintainability.svg)](https://qlty.sh/gh/RickCreator87/projects/AIGateway-Ollama)
-
-## Architecture (High Level)
