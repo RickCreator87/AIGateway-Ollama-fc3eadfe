@@ -1,8 +1,7 @@
-<a href="https://qlty.sh/gh/RickCreator87/projects/AIGateway-Ollama"><img src="https://qlty.sh/gh/RickCreator87/projects/AIGateway-Ollama/coverage.svg" alt="Code Coverage" /></a>
-![CI](https://github.com/RickCreator87/aigateway-ollama/actions/workflows/ci.yml/badge.svg)
-![License](https://img.shields.io/github/license/RickCreator87/aigateway-ollama)
-![Stars](https://img.shields.io/github/stars/RickCreator87/aigateway-ollama)
 
+
+
+[![Maintainability](https://qlty.sh/gh/RickCreator87/projects/rickcreator87.github.io/maintainability.svg)](https://qlty.sh/gh/RickCreator87/projects/rickcreator87.github.io)
 
 # AI Gateway for Ollama
 
